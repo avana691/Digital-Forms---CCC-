@@ -1,0 +1,243 @@
+
+body {
+    background: #ffd86b;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logo {
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-container a {
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    letter-spacing: -0.8px;
+}
+
+.page1 {
+    top: 50%;
+    left: 3%;
+    font-weight: 600;
+}
+
+.page2 {
+    top: 80%;
+    left: 50%;
+    font-weight: 200;
+}
+
+.page3 {
+    top: 20%;
+    left: 80%;
+    font-weight: 600;
+}
+
+.clutter-img {
+    position: absolute;
+}
+
+.books {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+}
+
+.boxes {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 170px;
+    height: auto;
+    z-index: 980;
+    rotate: -10deg;
+}
+
+.trash1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 220px;
+    height: auto;
+    z-index: 990;
+    rotate: -20deg;
+}
+
+.crafts {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 200px;
+    height: auto;
+    z-index: 980;
+    rotate: 10deg;
+}
+
+.crosswalk {
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    width: 250px;
+    height: auto;
+    z-index: 990;
+}
+
+.lights {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    width: 280px;
+    height: auto;
+    z-index: 999;
+    rotate: -5deg;
+}
+
+.flowers {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 200px;
+    height: auto;
+    z-index: 997;
+    rotate: -160deg;
+}
+
+.stuff-wall {
+    top: 0%;
+    right: 0%;
+    width: 300px;
+    height: auto;
+    z-index: 970;
+
+}
+
+.pipes {
+    bottom: 6%;
+    right: 10%;
+    width: 200px;
+    height: auto;
+    z-index: 970;
+    rotate: -180deg;
+}
+
+.rings {
+    top: 35%;
+    right: 2%;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+    rotate: -100deg;
+}
+
+.packing {
+    bottom: 0%;
+    left: 0%;
+    width: 200px;
+    height: auto;
+    z-index: 980;
+}
+
+.pigeons {
+    top: 0%;
+    left: 20%;
+    width: 300px;
+    height: auto;
+    z-index: 970;
+}
+
+.fries {
+    bottom: 5%;
+    left: 7%;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+    rotate: 20deg;
+}
+
+.skyline {
+    bottom: 0%;
+    left: 12%;
+    width: 320px;
+    height: auto;
+    z-index: 999;
+}
+
+.bicycle1 {
+    top: 10%;
+    left: 12%;
+    width: 200px;
+    height: auto;
+    z-index: 989;
+}
+
+.bicycle2 {
+    bottom: 0%;
+    right: 0%;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+}
+
+.bicycle3 {
+    bottom: 5%;
+    left: 15%;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+}
+
+.books2 {
+    top: 40%;
+    right: 15%;
+    width: 150px;
+    height: auto;
+    z-index: 989;
+}
+
+.bookstack1 {
+    bottom: 15%;
+    right: 0%;
+    width: 150px;
+    height: auto;
+    z-index: 989;
+}
+
+
+.boxes2 {
+    top: 0%;
+    right: 50%;
+    width: 200px;
+    height: auto;
+    z-index: 989;
+}
+
+.cansdeli {
+    bottom: 12%;
+    left: 3%;
+    width: 200px;
+    height: auto;
+    z-index: 970;
+    rotate: -70deg;
+}
+
+.couple {
+    top: 0%;
+    right: 15%;
+    width: 150px;
+    height: auto;
+    z-index: 970;
+}
+
