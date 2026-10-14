@@ -18,29 +18,46 @@ body {
 .link-container a {
     position: absolute;
     text-align: center;
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 24px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     letter-spacing: -0.8px;
+    text-decoration: none;
 }
 
 .page1 {
     top: 50%;
     left: 3%;
     font-weight: 600;
+    font-size: 24px;
 }
 
 .page2 {
     top: 80%;
     left: 50%;
     font-weight: 200;
+    font-size: 24px;
 }
 
 .page3 {
     top: 20%;
     left: 80%;
     font-weight: 600;
+    font-size: 24px;
+}
+
+.about {
+    top: 5%;
+    right: 25%;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.text {
+    top: 5%;
+    right: 5%;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .clutter-img {
@@ -116,7 +133,7 @@ body {
 }
 
 .stuff-wall {
-    top: 0%;
+    top: 10%;
     right: 0%;
     width: 300px;
     height: auto;
