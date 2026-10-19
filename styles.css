@@ -1,12 +1,37 @@
 
-body {
+html,
+body{
+    margin: 0;
+    /*width: 100%;
+    min-height: 100% */
+    overflow-x: clip;
+}
+
+body.homepage {
     background: #ffd86b;
     background-size: cover;
     background-position: center;
-    /*height: 100vh;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;*/
+
+}
+
+body.page1 {
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+
+}
+
+body.page2 {
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+
+}
+
+body.page3 {
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -38,21 +63,21 @@ body {
     overflow: hidden;
 }
 
-.page1 {
+.page1.html {
     top: 50%;
     left: 3%;
     font-weight: 600;
     font-size: 24px;
 }
 
-.page2 {
+.page2.html {
     top: 80%;
     left: 50%;
     font-weight: 200;
     font-size: 24px;
 }
 
-.page3 {
+.page3.html {
     top: 20%;
     left: 80%;
     font-weight: 600;
@@ -72,6 +97,30 @@ body {
     font-weight: 600;
     font-size: 28px;
 }
+
+
+.clutter-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.clutter-img-container .clutter-img {
+    position: absolute;
+
+    translate:
+        var(--scatter-x, 0px)
+        var(--scatter-y, 0px);
+
+    transition: none;
+    will-change: translate;
+    pointer-events: none;
+}
+
 
 .clutter-img {
     position: absolute;
@@ -507,4 +556,39 @@ body {
     height: auto;
     z-index: 990;
     rotate: -30deg;
+}
+
+.books3 {
+    bottom: 5%;
+    right: 40%;
+    width: 200px;
+    height: auto;
+    z-index: 960;
+    rotate: -180deg;
+}
+
+h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 30px;
+    line-height: 0.8;
+    text-align: justify;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 80px;
+    margin-left: 60px;
+
+}
+
+.text-container {
+    display: grid;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    text-align: justify;
+    max-width: 250px;
+}
+
+.text1 {
+    font-weight: 200px;
+    margin: 50px; 
 }
