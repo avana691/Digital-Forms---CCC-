@@ -3,8 +3,8 @@ const images = document.querySelectorAll(
   ".clutter-img-container .clutter-img"
 );
 
-const radius = 300;
-const maxDistance = 330;
+const radius = 400;
+const maxDistance = 400;
 const smoothing = 0.07;
 
 let mouseX = -10000;

@@ -10,21 +10,18 @@ body.homepage {
     background: #ffd86b;
     background-size: cover;
     background-position: center;
-
 }
 
 body.page2 {
     background: #e7e7e7;
     background-size: cover;
     background-position: center;
-
 }
 
 body.page3 {
     background: #e7e7e7;
     background-size: cover;
     background-position: center;
-
 }
 
 .logo {
@@ -37,11 +34,18 @@ body.page3 {
 }
 
 .ccc {
-    max-width: 200px;
-    height: auto;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
+    display: block;
+    width: 200px;
+    z-index: 999;
+}
+
+.ccc img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .link-container a {
@@ -54,21 +58,21 @@ body.page3 {
     overflow: hidden;
 }
 
-.page1 a {
+a.memory {
     top: 50%;
     left: 3%;
     font-weight: 600;
     font-size: 24px;
 }
 
-.page2 a {
+a.treasure {
     top: 80%;
     left: 50%;
     font-weight: 200;
     font-size: 24px;
 }
 
-.page3 a {
+a.generous {
     top: 20%;
     left: 80%;
     font-weight: 600;
@@ -559,41 +563,39 @@ body.page3 {
 }
 
 body.page1 {
-    background: #e7e7e7;
+    background: #ffd86b;
     overflow: hidden;
 }
 
 /* The window through which you explore the composition */
-.viewport {
+.page1 .viewport {
     width: 100vw;
     height: 100vh;
     overflow: auto;
 }
 
 /* The oversized horizontal canvas */
-.canvas {
+.page1 .canvas {
     position: relative;
-    width: 5000px;
-    height: 2500px;
+    width: 3300px;
+    height: 100vh;
 }
 
 /* Heading placement */
 h1 {
     position: absolute;
     left: 60px;
-    top: 80px;
-
+    top: 120px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 30px;
     line-height: 0.8;
     font-weight: 600;
     letter-spacing: -1px;
-
     margin: 0;
 }
 
 /* Container no longer controls the paragraph positions */
-.text-container {
+.page1-container {
     position: absolute;
     inset: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -603,37 +605,627 @@ h1 {
 }
 
 /* Every paragraph is independently positioned */
-.text-container p {
+.page1-container p {
     position: absolute;
     width: 250px;
     box-sizing: border-box;
     margin: 0;
 }
 
-.text1 {
+.page1 .text1 {
     left: 50px;
     top: 200px;
     font-weight: 200;
 }
 
-.text2 {
-    left: 600px;
-    top: 500px;
-    width: 250px;
+.page1 .text2 {
+    left: 350px;
+    top: 550px;
     font-weight: 600;
-
-    transform: rotate(-90deg);
+    rotate: -90deg;
     transform-origin: top left;
+    color:white;
 }
 
-.text3 {
-    left: 1000px;
+.page1 .text3 {
+    left: 400px;
+    top: 600px;
+    font-weight: 400;
+}
+
+.page1 .text4 {
+    left: 600px;
     top: 250px;
     font-weight: 200;
 }
 
-.text4 {
-    left: 1500px;
-    top: 700px;
+.page1 .text5 {
+    left: 900px;
+    top: 300px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.page1 .text6 {
+    left: 1100px;
+    top: 50px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    rotate: -90deg;
+    color:white;
+}
+.page1 .text7 {
+    left: 1300px;
+    top: 400px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.page1 .text8 {
+    left: 1450px;
+    top: 200px;
     font-weight: 600;
 }
+.page1 .text9 {
+    left: 1600px;
+    top: 500px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color:white;
+}
+.page1 .text10 {
+    left: 1700px;
+    top: 50px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.page1 .text11 {
+    left: 2000px;
+    top: 550px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    rotate: -90deg;
+}
+.page1 .text12 {
+    left: 2100px;
+    top: 300px;
+    font-weight: 200;
+}
+.page1 .text13 {
+    left: 2300px;
+    top: 50px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color:white;
+}
+.page1 .text14 {
+    left: 2400px;
+    top: 600px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.page1 .text15 {
+    left: 2450px;
+    top: 400px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color:white;
+}
+.page1 .text16 {
+    left: 2500px;
+    top: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.page1 .text17 {
+    left: 2700px;
+    top: 200px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    rotate: -90deg;
+}
+.page1 .text18 {
+    left: 2800px;
+    top: 500px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.page1 .text19 {
+    left: 3000px;
+    top: 300px;
+    font-weight: 600;
+    color:white;
+}
+
+.page1 .text20 {
+    left: 3200px;
+    top: 100px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes text-appear-rotated {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* First text blocks: staggered entrance on page load */
+.page1-container .text1 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 0.2s both;
+}
+
+.page1-container .text2 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 0.8s both;
+}
+
+.page1-container .text3 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.2s both;
+}
+
+.page1-container .text4 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.7s both;
+}
+
+.page1-container .text5 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 2.2s both;
+}
+
+.page1-container .text6 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 2.8s both;
+}
+
+.page1-container .text7 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 3.4s both;
+}
+
+.page1-container .text8 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 4.0s both;
+}
+/* Remaining blocks: appear as they enter the horizontal viewport */
+.page1-container .text8,
+.page1-container .text9,
+.page1-container .text10,
+.page1-container .text11,
+.page1-container .text12,
+.page1-container .text13,
+.page1-container .text14,
+.page1-container .text15,
+.page1-container .text16,
+.page1-container .text17,
+.page1-container .text18,
+.page1-container .text19,
+.page1-container .text20 {
+    opacity: 0;
+    animation: text-appear 1s linear both;
+    animation-timeline: view(inline);
+    animation-range: entry 0% entry 100%;
+
+}
+
+/* Rotated blocks: scroll-triggered */
+.page1-container .text11,
+.page1-container .text17 {
+    animation-name: text-appear-rotated;
+    animation-timeline: view(inline);
+    animation-range: entry 0% entry 100%;
+}
+
+
+body.page2 {
+    background: #e7e7e7;
+    overflow: hidden;
+}
+
+
+
+/* The window through which you explore the composition */
+.page2 .viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* The oversized horizontal canvas */
+.page2 .canvas {
+    position: relative;
+    width: 2050px;
+    height: 100vh;
+}
+
+/* Heading placement */
+h1 {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 0.8;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+/* Container no longer controls the paragraph positions */
+.page2-container {
+    position: absolute;
+    inset: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    text-align: justify;
+}
+
+/* Every paragraph is independently positioned */
+.page2-container p {
+    position: absolute;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page2 .text1 {
+    left: 50px;
+    top: 200px;
+    font-weight: 200;
+}
+
+.page2 .text2 {
+    left: 350px;
+    top: 250px;
+    font-weight: 600;
+    transform-origin: top left;
+}
+
+.page2 .text3 {
+    left: 200px;
+    top: 550px;
+    font-weight: 400;
+    rotate: -90deg;
+}
+
+.page2 .text4 {
+    left: 550px;
+    top: 200px;
+    font-weight: 200;
+}
+
+.page2 .text5 {
+    left: 900px;
+    top: 300px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.page2 .text6 {
+    left: 1100px;
+    top: 50px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    rotate: -90deg;
+}
+.page2 .text7 {
+    left: 1300px;
+    top: 400px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.page2 .text8 {
+    left: 1450px;
+    top: 200px;
+    font-weight: 600;
+}
+.page2 .text9 {
+    left: 1600px;
+    top: 500px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.page2 .text10 {
+    left: 1800px;
+    top: 50px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.page2 .text11 {
+    left: 2000px;
+    top: 550px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    rotate: -90deg;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes text-appear-rotated {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* First text blocks: staggered entrance on page load */
+.page2-container .text1 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 0.2s both;
+}
+
+.page2-container .text2 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 0.8s both;
+}
+
+.page2-container .text3 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.2s both;
+}
+
+.page2-container .text4 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.7s both;
+}
+
+.page2-container .text5 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 2.2s both;
+}
+
+.page2-container .text6 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 2.8s both;
+}
+
+.page2-container .text7 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 3.4s both;
+}
+
+/* Remaining blocks: appear as they enter the horizontal viewport */
+.page2-container .text8,
+.page2-container .text9,
+.page2-container .text10,
+.page2-container .text11 {
+    opacity: 0;
+    animation: text-appear 1s linear both;
+    animation-timeline: view(inline);
+    animation-range: entry 0% entry 100%;
+
+}
+
+body.page3 {
+    background: #e7e7e7;
+    overflow: hidden;
+}
+
+/* The window through which you explore the composition */
+.page3 .viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* The oversized horizontal canvas */
+.page3 .canvas {
+    position: relative;
+    height: 2050px;
+    width: 100vw;
+}
+
+/* Heading placement */
+h1 {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 0.8;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+/* Container no longer controls the paragraph positions */
+.page3-container {
+    position: absolute;
+    inset: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    text-align: justify;
+}
+
+/* Every paragraph is independently positioned */
+.page3-container p {
+    position: absolute;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page3 .text1 {
+    left: 50px;
+    top: 200px;
+    font-weight: 200;
+}
+
+.page3 .text2 {
+    left: 350px;
+    top: 250px;
+    font-weight: 600;
+    transform-origin: top left;
+}
+
+.page3 .text3 {
+    left: 200px;
+    top: 550px;
+    font-weight: 400;
+    rotate: -90deg;
+}
+
+.page3 .text4 {
+    left: 550px;
+    top: 200px;
+    font-weight: 200;
+}
+
+.page3 .text5 {
+    left: 900px;
+    top: 300px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.page3 .text6 {
+    left: 1100px;
+    top: 50px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    rotate: -90deg;
+}
+.page3 .text7 {
+    left: 1300px;
+    top: 400px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.page3 .text8 {
+    left: 1450px;
+    top: 200px;
+    font-weight: 600;
+}
+.page3 .text9 {
+    left: 1600px;
+    top: 500px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.page3 .text10 {
+    left: 1800px;
+    top: 50px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.page3 .text11 {
+    left: 2000px;
+    top: 550px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    rotate: -90deg;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes text-appear-rotated {
+    from {
+        opacity: 0;
+        translate: 0 40px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* First text blocks: staggered entrance on page load */
+.page2-container .text1 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 0.2s both;
+}
+
+.page2-container .text2 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 0.8s both;
+}
+
+.page2-container .text3 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.2s both;
+}
+
+.page2-container .text4 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 1.7s both;
+}
+
+.page2-container .text5 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 2.2s both;
+}
+
+.page2-container .text6 {
+    opacity: 0;
+    animation: text-appear-rotated 1s ease-out 2.8s both;
+}
+
+.page2-container .text7 {
+    opacity: 0;
+    animation: text-appear 1s ease-out 3.4s both;
+}
+
+/* Remaining blocks: appear as they enter the horizontal viewport */
+.page2-container .text8,
+.page2-container .text9,
+.page2-container .text10,
+.page2-container .text11 {
+    opacity: 0;
+    animation: text-appear 1s linear both;
+    animation-timeline: view(inline);
+    animation-range: entry 0% entry 100%;
+
+}
+
+
