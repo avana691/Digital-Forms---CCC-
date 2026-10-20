@@ -83,4 +83,72 @@ function animate() {
 animate();
 
 
+/* ========================================
+   TEXT BLOCKS: SCROLL-DIRECTION ANIMATION
+======================================== */
 
+document.querySelectorAll(".viewport").forEach((viewport) => {
+    let lastX = viewport.scrollLeft;
+    let lastY = viewport.scrollTop;
+    let scrollDirection = "right";
+
+    viewport.addEventListener("scroll", () => {
+        const currentX = viewport.scrollLeft;
+        const currentY = viewport.scrollTop;
+
+        if (currentX !== lastX) {
+            scrollDirection = currentX > lastX ? "right" : "left";
+        }
+
+        if (currentY !== lastY) {
+            scrollDirection = currentY > lastY ? "down" : "up";
+        }
+
+        lastX = currentX;
+        lastY = currentY;
+    }, { passive: true });
+
+    const blocks = viewport.querySelectorAll(
+        ".page1-container p, .page2-container p, .page3-container p"
+    );
+
+    if (!blocks.length) {
+        console.warn("No text blocks found inside this viewport:", viewport);
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            const el = entry.target;
+
+            // Choose the entrance direction
+            const horizontal =
+                scrollDirection === "right" ? "60px" :
+                scrollDirection === "left" ? "-60px" : "0px";
+
+            const vertical =
+                scrollDirection === "down" ? "60px" :
+                scrollDirection === "up" ? "-60px" : "0px";
+
+            el.style.setProperty("--enter-x", horizontal);
+            el.style.setProperty("--enter-y", vertical);
+
+            // Start from the offset position
+            el.classList.remove("is-visible");
+
+            // Apply the visible state on the next frame
+            requestAnimationFrame(() => {
+                el.classList.add("is-visible");
+            });
+
+            observer.unobserve(el);
+        });
+    }, {
+        root: viewport,
+        threshold: 0.01
+    });
+
+    blocks.forEach((block) => observer.observe(block));
+});
